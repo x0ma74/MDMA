@@ -11,7 +11,9 @@ li {
   list-style-type: none;
 }
 
-
+h1 {
+  font-size: 2.5rem;
+}
 
 a {
   text-decoration: none;
@@ -28,7 +30,7 @@ a {
 body {
   background: #f1f1f1;
   color: #272626;
-
+  font: normal 20px/1.6 "Noto Sans", sans-serif;
 }
 
 
@@ -39,35 +41,38 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
   background: #DD3543;
 }
 
 nav {
-
+  display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
+  transition: align-items .2s;
 }
 
 .logo {
-
+  font-size: 2rem;
   display: inline-block;
    padding: 20px 30px;
   background: #F35B66;
   color: #fff;
-
+  margin: 50px 0 0 50px;
   transition: all .2s;
 }
 
 ul {
   display: flex;
-
+  margin: 50px 50px 0 0;
   padding: 0;
-
+  transition: margin .2s;
 }
 
+li:not(:last-child) {
+  margin-right: 20px;
+}
 
 li a {
   display: block;
@@ -76,10 +81,10 @@ li a {
 
 .toggle-menu {
   display: none;
-
+  font-size: 2rem;
   color: #fff;
-
-
+  margin: 10px 10px 0 0;
+  transition: margin .2s;
 }
 
 
@@ -101,7 +106,7 @@ main {
 
 .scroll .logo {
   padding: 10px 20px;
-
+  font-size: 1.5rem;
 }
 
 .scroll nav {
@@ -128,7 +133,10 @@ main {
   ul {
     display: none;
   }
-
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
   .toggle-menu {
     display: block;
   }
